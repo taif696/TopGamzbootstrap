@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.folder/webpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Rubik+Distressed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kenia&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Josefin Sans", sans-serif;
+        font-family: "Rubik Distressed", cursive;
+      }
+      .container {
+        margin-top: 30px;
+      }
+      .topgames-heading-2 {
+        margin-top: 80px;
+      }
+      .card-title {
+        text-decoration: overline;
+      }
+      .list-group-item {
+        font-weight: bold;
+      }
+      .also-h1 {
+        margin-top: 50px;
+      }
+      .bro {
+        background-image: linear-gradient(
+          lightgreen,
+          rgb(255, 255, 101),
+          lightblue
+        );
+      }
+      .card-title {
+        font-family: "Lobster", cursive;
+      }
+      .list-group-item {
+        font-family: "Roboto", sans-serif;
+      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          display: block;
+        }
+      }
+      h2 {
+        font-family: "Kenia", cursive;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bro">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="webpage.html">Top GamZ</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="webpage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="topgames.html">Top Games</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Choose Type of Games
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+                
+                <li><a class="dropdown-item" href="survival.html">Survival</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="action.html">Action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="protips.html">Tips to Become Pro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <button class="btn btn-danger hii " data-bs-toggle="modal" data-bs-target="#loginModal">
+              Login
+              </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <p class="h1 also-h1">Best PC Games <b>2022</b></p>
+      <h2>
+        Dream of most of the people is to play games in PC. BUt,nowdays there
+        are so many games and because of this it has become hard to find
+        a good game. So here I am, to suggest you some best games in 2022 for
+        PC.🤠
+      </h2>
+      <div class="container">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://www.91-cdn.com/hub/wp-content/uploads/2022/03/pc-shooters.png"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Top Shooting Games</h5>
+            <p class="card-text">
+              Shooting game are very common and I think all gamers must had
+              played it someday.But, findind a good shooting game with good
+              grafics is quite hard.So,here I am to suggest you some best action
+              games.👲
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Destiny 2</li>
+            <li class="list-group-item">2. Call of Duty: Warzone</li>
+            <li class="list-group-item">3. Doom Eternal</li>
+            <li class="list-group-item">4. Half-Life: Alyx</li>
+            <li class="list-group-item">
+              5. Halo: The Master Chief Collection
+            </li>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkNu6_flf98zdoKbqQur1bkoOCocWOrACjQ&usqp=CAU"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Top Open-World Games</h5>
+            <p class="card-text">
+              Our world is very big.And people, always can't explore the whole
+              world. And for this purpose open-world games are made ✈.To
+              feel that expirence you need a better game with good grafics and as well as
+              many places in it to explore .This are some best open-world games
+              given below.😉
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Tower of Fantasy</li>
+            <li class="list-group-item">2. Elden Ring</li>
+            <li class="list-group-item">3. Halo Infinite</li>
+            <li class="list-group-item">4. No Man's Sky</li>
+            <li class="list-group-item">5. The Witcher 3: Wild Hunt</li>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCz97dFuAP7JLROsGTLKIOqpk-UIYKMq26Ggq3h2SzHpF4H_2QGoS6z4s-j7Z9hhXpMA4&usqp=CAU"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Top Racing Games</h5>
+            <p class="card-text">
+              Driving super cars is an another level exprience.But, in reality
+              everyone can't afford a supercar🏎.So,again for these purpose racing
+              games are built, so that you can get the expirence of driving you favorite supercars.Given
+              below are some top racing games.😎
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Forza Horizon 5</li>
+            <li class="list-group-item">2. Dirt Rally 2</li>
+            <li class="list-group-item">3. Shift 2</li>
+            <li class="list-group-item">4. Art of Rally</li>
+            <li class="list-group-item">5. Project Cars 2</li>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.ytimg.com/vi/wtUCPqlLwgg/mqdefault.jpg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Top Survival Games</h5>
+            <p class="card-text">
+              You can say whatever you want but in my opinion survival games are
+              the best and addictive also.But,the most important thing in an
+              survival game is to have that realistic feel. So, that's why I
+              have given you some finest survival games of this year.😋
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. V Rising</li>
+            <li class="list-group-item">2. Valheim</li>
+            <li class="list-group-item">3. Subnautica</li>
+            <li class="list-group-item">4. Grounded</li>
+            <li class="list-group-item">5. Frostpunk</li>
+          </ul>
+        </div>
+      </div>
+      <p class="h1 topgames-heading-2">Best Mobile Games</p>
+      <h2>
+        I think that vast majority of people in the world have smartphones.And more
+        than half of them play games everyday in their phones.And in <b>2022</b> there is a huge number of
+        games in playstore and other gaming platforms. But there are a few gams
+        that are really the good.So,I have found for you some best games among these good
+        games. The names of the games are given below.😁
+      </h2>
+      <div class="container">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd41LpxibazVBN0yPa_jx_379vp-dRRTwIvQ&usqp=CAU"
+            class=" img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Top High-Grafics Games</h5>
+            <p class="card-text">
+              In a game grafics play the most important role.Finding a
+              game with good grafics in PC is simple but in mobile it is quite complicated.For that reason I have collected some games with excellent grafics and
+              there names are given below.🤗
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. ARK: Survival Evolved</li>
+            <li class="list-group-item">2. Genshin Impact</li>
+            <li class="list-group-item">3. Real Racing 3</li>
+            <li class="list-group-item">4. Shadowgun Legends</li>
+            <li class="list-group-item">5. Fortnite</li>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.ytimg.com/vi/kfKeZ_HET3k/maxresdefault.jpg"
+            class=" img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Top Multiplayer Games</h5>
+            <p class="card-text">
+              In the whole gaming industry multiplayer games is now taking a
+              large part.And you have to admit that playing
+              games with your friends and other online players is fun🕺. So, I
+              have recomended you some multiplayer-games with a <br />
+              top-notch concept.🙃
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Among Us</li>
+            <li class="list-group-item">2. PUBG Mobile</li>
+            <li class="list-group-item">3. Fortnite</li>
+            <li class="list-group-item">4. Garena Free Fire Max</li>
+            <li class="list-group-item">5. Clash Royale</li>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.ytimg.com/vi/b25WxOge5N0/maxresdefault.jpg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Top Arcade Games</h5>
+            <p class="card-text">
+              Human beings often easily get bored .For this boring moments ARCADE games
+              are made.This main quality of these type of games is that it never
+              ends.But the games also have to be very interesting so you will
+              not get bored easily while playing these games.So, some best arcade games for mobile is
+              given below.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Asphalt 9: Legends</li>
+            <li class="list-group-item">2. Brawl Stars</li>
+            <li class="list-group-item">3. Brawl Stars</li>
+            <li class="list-group-item">4. Duet</li>
+            <li class="list-group-item">5. True Skate</li>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://www.seasiainfotech.com/blog/wp-content/uploads/2020/01/Most-Popular-Mobile-Games-You-Must-Play-In-2020.jpg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">My Favorite Games</h5>
+            <p class="card-text">
+              To be honest I have not played too many games but i will try my
+              best to give you the best games from my opinion. 😅😃
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Rocket league sideswipe(RLSS)</li>
+            <li class="list-group-item">2. Free Fire (FF)</li>
+            <li class="list-group-item">3. Clash of Clans(COC)</li>
+            <li class="list-group-item">4. Clash Royale(CR)</li>
+            <li class="list-group-item">5. BGMI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2021-2022 TopGamz, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </body>
+</html>
